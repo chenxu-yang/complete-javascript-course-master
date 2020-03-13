@@ -1,0 +1,27 @@
+except 5 types, anything else is object in js
+object-oriented programming:objects interacting with one another through methods and properties, used to store data,structure applications into modules and keeping code clean
+
+
+constructor: person{name:,year:}
+instances:chenxu{}
+
+         inheritance
+person  <-----------athlete
+prototype:
+
+
+
+every js object has prototype property, which makes inheritance possible in js
+the prototype property of an object is where we put methods and properties that we want other objects to inherit;
+the constructor's prototype property is not the prototype of the constructor itself, it's the prototype of all instances that are created  through it.
+when a certain method(or property)is called, the search starts in the object itself,and if it cannot be found, the search moves on to the object's prototype. this continues until this method is found:prototype chain.
+
+
+constructor function
+var person=function(name,yearOfBirth,job){
+    this.name=name;
+    this.yearOfBirth=yearOfBirth;
+    this.job=job;
+}
+var john=new person('john',1990,'teacher');
+       

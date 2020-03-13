@@ -1,0 +1,60 @@
+javascript: dynamic aotu assign variable
+variable name start with letter or _ or $
+*****************************************
+prompt:like input, read input into variable,var lastName=prompt('what is your lastname');
+typeof: console.log(typeof x)->number,string,underfined,boolean,null
+
+escape:' inside' ',console.log('is she\'s boyfirend you?')
+
+if(){
+
+}else if{
+
+}else{
+
+}
+
+and:&&
+or:||
+not:!
+
+age>10?console.log('age):console.log('
+too small)
+
+var drink=age>10?'beer':'juice'
+
+
+switch:
+var job='teacher'
+switch(job){
+    case 'teacher':
+    case 'driver':
+}
+
+
+var john = ['John', 'Smith', 1990, 'designer', false];
+
+john.push('blue');
+john.unshift('Mr.');//add in the front
+john.pop();
+john.shift();//move the front ele
+john.indexOf(1990)--->2 if indexOf(32)-->-1
+
+
+var jane=new Object();
+jane.lastname='chenxu';
+jane.firstname='ej';
+jane['birthyear']=1292;
+console.log(jane);
+
+
+
+var john = {
+    fullName: 'John Smith',
+    mass: 110,
+    height: 1.95,
+    calcBMI: function() { //use this,so that not need to pass variable into the function.
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+}

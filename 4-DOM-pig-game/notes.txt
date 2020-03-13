@@ -1,0 +1,7 @@
+DOM: document object model
+Math.random():get number 0~1 
+Math.floor():get an integer
+
+events:clicking a button....
+
+selectbyid is faster than queryselector
