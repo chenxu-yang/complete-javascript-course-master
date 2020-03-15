@@ -25,3 +25,56 @@ var person=function(name,yearOfBirth,job){
 }
 var john=new person('john',1990,'teacher');
        
+       
+primitives:contain something
+objects:point to something
+
+var a=23;                var obj1={age:20}
+b=a                      var obj2=obj1
+a=20                     obj1.age=10
+a now =20                now obj1=10
+b now =23                now obj2=10
+
+
+
+
+
+function is an instance of the Object type
+a function behaves like any other object
+we can store function in a variable 
+we can pass a function as an argument to another function
+we can return a function from a function
+
+
+
+IIFE
+
+(function(){
+    console.log('fdsa')
+})();
+
+
+closures: an inner function has always access to the variables and parameters of its outer function, even after the outer function has returned.
+
+
+
+
+function retirement(retirementAge){
+    var a=' years left';
+    return function(yearofBirth){
+        var age=2016-yearofBirth;
+        console.log((retirementAge-age)+a);
+    }
+}
+var retirementUS=retirement(56);
+retirement(66)(1990)  //the second function can use valuable and parameter in the first function
+
+
+
+
+
+
+
+
+
+

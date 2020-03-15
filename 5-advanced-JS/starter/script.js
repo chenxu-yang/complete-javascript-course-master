@@ -23,7 +23,7 @@ console.log(john.lastName);*/
 
 
 //Object.create
-var personProto={
+/*var personProto={
     calculateAge:function(){
         console.log(2016-this.yearOfBirth);
     }
@@ -37,4 +37,34 @@ var jane=Object.create(personProto,{
     name:{value:'jane'},
     year:{value:1989},
     job:{value:'designer'}
-});
+});*/
+
+//primitives and objects
+
+var john={
+    fullname:'John Smith',
+    mass:92,
+    height:1.95,
+    calBMI:function(){
+        this.bmi=this.mass/(this.height*this.height);
+        return this.bmi;
+    }
+}
+var mark={
+    fullname:'Mark miller',
+    mass:78,
+    height:1.69,
+    calBMI:function(){
+        this.bmi=this.mass/(this.height*this.height);
+        return this.bmi;
+    }
+}
+
+
+if (john.calBMI()>mark.calBMI()){
+    console.log(john.fullname+'wins');
+}else if(john.bmi<marl.bmi){
+    console.log(mark.fullname+'wins');
+}else{
+    console.log('they are the same');
+}
